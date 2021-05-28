@@ -1,0 +1,32 @@
+Grammar:
+
+S -> dA
+A -> B | BcA
+B -> bD
+D -> a | aD
+
+Output:
+
+Parse Table
+      a   e   f  $  d
+S    Ag
+A  abcB
+B        Cd
+C        eM
+D         e
+N        DE
+E            fN
+M             E  $  $
+
+S
+Ag
+abcBg
+abcCdg
+abceMdg
+abceEdg
+abcefNdg
+abcefDEdg
+abcefeEdg
+abcefedg
+
+Accepted!
